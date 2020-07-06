@@ -7,3 +7,13 @@
 # Do not worry about error checking the user input unless you want to - you can assume the user types numbers
 #  properly. Do not name your variable sum or use the sum() function.
 
+def computepay(h,r):
+    if h > 40:
+        return 40*r + (h-40)*15.75
+    else :
+        return h*r
+
+hrs = input("Enter Hours:")
+rate = input("Enter rate: ")
+p = computepay(float(hrs),float(rate))
+print("Pay",p)
