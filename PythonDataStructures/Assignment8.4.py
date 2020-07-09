@@ -12,10 +12,9 @@ lst = list()
 for line in fh:
     line=line.rstrip()
     for word in line.split():
-        if(word == lst):
-            continue
-        else:
+        if(word not in lst):
             lst.append(word)
+        
         # lst.sort()
 lst.sort()
 print(lst)   
