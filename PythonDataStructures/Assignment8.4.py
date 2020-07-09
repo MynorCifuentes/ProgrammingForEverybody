@@ -14,20 +14,8 @@ for line in fh:
     for word in line.split():
         if(word not in lst):
             lst.append(word)
-        
-        # lst.sort()
 lst.sort()
 print(lst)   
-#     lst.append(line.split())
-#     lst.sort()
-# print(len(lst))
-
-   
-#     if(lst != line.split()):
-#         lst.append(line.split())
-# for lines in lst:
-
-#     print(lines.split())
 
 
 
